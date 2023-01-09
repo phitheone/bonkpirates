@@ -1,0 +1,325 @@
+.NavSuper {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  /* color: wheat; */
+  /* background: linear-gradient(to right, var(--bg-main), var(--bg-secondary)); */
+  background: var(--bg-main);
+  border-bottom: solid var(--text-main) 6px;
+  position: sticky;
+  height: 80px;
+  top: 0;
+  z-index: 20;
+}
+
+.NavContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+
+  /* border: 1px solid rgb(255, 255, 255); */
+}
+
+.Logo {
+  /* border: 1px solid rgb(253, 2, 2); */
+}
+
+.Logo img {
+  height: 70px;
+  cursor: pointer;
+}
+* .NavLink {
+  border-bottom: solid transparent 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.NavLink:hover {
+  border-bottom: solid var(--text-focus) 4px;
+}
+
+.Socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 120px;
+
+  /* border: 1px solid greenyellow; */
+}
+
+.Socials img {
+  height: 40px;
+  transition: 0.3s ease-in-out;
+}
+
+.Socials a {
+  cursor: pointer;
+}
+
+.Socials img:hover {
+  /* transition: 0.3s ease-in-out; */
+  /* transform: scale(1.1); */
+  /* filter: invert(50%) sepia(100%) hue-rotate(170deg) saturate(10); */
+  animation: infinite linear 1s;
+  animation-name: jumpyB;
+}
+
+.NavButtons {
+  display: flex;
+  flex-direction: row;
+}
+
+.NavBuyBtn img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.NavBuyBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background: var(--bg-main); */
+  /* border: solid var(--text-main) 2px; */
+  border-radius: 0rem;
+  padding: 10px 10px;
+  margin-right: 30px;
+  margin-left: 30px;
+  color: var(--text-main);
+  /* font-weight: bold; */
+  font-size: 26px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.NavBuyBtn:hover {
+  /* background: var(--text-main); */
+  /* border: solid var(--bg-main) 2px; */
+  /* color: var(--bg-main); */
+  animation: infinite linear 1s;
+  animation-name: jumpyB;
+}
+
+@keyframes jumpyB {
+  0% {
+    rotate: 0deg;
+    transform: translateY(0px);
+  }
+  12.5% {
+    transform: translateY(-2px);
+  }
+  25% {
+    rotate: 3deg;
+    transform: translateY(0px);
+  }
+  37.5% {
+    transform: translateY(-2px);
+  }
+  50% {
+    rotate: 0deg;
+    transform: translateY(0px);
+  }
+  62.5% {
+    transform: translateY(-2px);
+  }
+  75% {
+    rotate: -3deg;
+    transform: translateY(0px);
+  }
+  87.5% {
+    transform: translateY(-2px);
+  }
+}
+
+.Movil {
+  position: absolute;
+  width: 0%;
+  min-width: 0px;
+  pointer-events: none;
+  opacity: 1;
+  right: 40px;
+
+  /* border: 1px solid rgb(255, 47, 217); */
+}
+
+.Movil img {
+  width: 0px;
+}
+
+.NavBtn {
+  background: none;
+  border: none;
+}
+
+/*=========== Media Queries ===========*/
+
+@media screen and (max-width: 1200px) {
+  .NavContainer {
+    width: 90%;
+    justify-content: space-between;
+
+    /* border: 1px solid greenyellow; */
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .NavSuper {
+    justify-content: left;
+  }
+
+  .NavContainer {
+    /* width: calc(50% + 50px); */
+    justify-content: space-between;
+  }
+
+  .NavButtons {
+    pointer-events: none;
+    opacity: 0;
+    width: 0px;
+    min-width: 0px;
+  }
+
+  .Socials {
+    pointer-events: auto;
+    opacity: 1;
+    width: 95px;
+    min-width: 0px;
+
+    /* border: 1px solid greenyellow; */
+  }
+
+  .Socials img {
+    width: 0%;
+    pointer-events: none;
+  }
+
+  /* .MintBtn a {
+    opacity: 0;
+    pointer-events: none;
+  } */
+
+  .Movil {
+    position: absolute;
+    width: 40px;
+    pointer-events: auto;
+    opacity: 1;
+    right: 40px;
+
+    /* border: 1px solid rgb(255, 47, 217); */
+  }
+
+  .Movil img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .NavButtons {
+    flex-direction: column;
+  }
+
+  .NavBuyBtn {
+    margin-bottom: 3px;
+    margin-top: 3px;
+  }
+}
+
+/*============Panel Movil============*/
+
+.NavPanel-Closed {
+  position: absolute;
+  top: 90px;
+  width: 90%;
+  left: 4%;
+  background: var(--bg-main);
+  opacity: 0;
+  pointer-events: none;
+  border: solid 4px var(--text-main);
+  /* border-radius: 10px; */
+  box-shadow: inset 0 0 20px white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15% 0%;
+}
+
+.NavPanel-Open {
+  position: absolute;
+  top: 90px;
+  width: 90%;
+  left: 4%;
+  background: var(--bg-main);
+  opacity: 0;
+  pointer-events: none;
+  border: solid 4px var(--text-main);
+  /* border-radius: 10px; */
+  box-shadow: inset 0 0 20px white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15% 0%;
+}
+
+.NavPanel-Open p {
+  color: var(--bg-secondary);
+}
+
+.PLogo img {
+  width: 300px;
+}
+
+.PNavBuyBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* background: var(--bg-main); */
+  border: solid var(--text-main) 2px;
+  border-radius: 0rem;
+  padding: 10px 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--text-main);
+  /* font-weight: bold; */
+  font-size: 26px;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 850px) {
+  .NavPanel-Closed {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  .NavPanel-Open {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.PanelLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 0%;
+  padding-bottom: 10%;
+}
+
+.PanelSocials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 120px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}

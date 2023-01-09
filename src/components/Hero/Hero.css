@@ -1,0 +1,196 @@
+.HeroSuper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 800px; */
+  background-image: url("../../images/seabg.png");
+  background-color: var(--text-focus);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-bottom: solid var(--text-main) 6px;
+
+  /* border: solid red 1px; */
+}
+
+.Herocontainer {
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: row;
+  /* flex: 1 1; */
+  /* align-items: center; */
+  justify-content: center;
+
+  width: 70%;
+  z-index: 10;
+
+  /* border: solid red 1px; */
+}
+
+.HLeft {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+
+  /* border: solid red 1px; */
+}
+
+.HLeft img {
+  width: 90%;
+}
+
+.HLeft a {
+  text-decoration: none;
+}
+
+.HLeft h1 {
+  padding: 0px 0px;
+  margin-top: 0px;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  line-height: 63px;
+  text-shadow: 0 0 7px var(--text-secondary), 0 0 15px var(--text-secondary);
+
+  /* border: solid red 1px; */
+}
+
+.HLeft h2 {
+  padding: 0px 0px;
+  margin-top: 0px;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  line-height: 29px;
+  text-shadow: 0 0 7px var(--text-secondary);
+}
+
+.HLeft p {
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  /* font-weight: bold; */
+}
+
+.HRight {
+  width: 50%;
+}
+
+.HRight img {
+  width: 90%;
+  /* height: 600px; */
+}
+
+.HeroBtnContainer {
+  display: flex;
+  flex-direction: row;
+
+  /* border: solid red 1px; */
+}
+
+.HeroBtn img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.HeroBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--bg-main);
+  border: solid var(--text-main) 2px;
+  border-radius: 0rem;
+  padding: 10px 10px;
+  margin-right: 10px;
+  color: var(--text-main);
+  font-size: 26px;
+  /* font-weight: bold; */
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+
+.HeroBtn:hover {
+  background: var(--text-main);
+  border: solid var(--bg-main) 2px;
+  color: var(--bg-main);
+}
+
+/*============Media Queries==============*/
+
+@media screen and (max-width: 1200px) {
+  .HeroSuper {
+    background-size: auto 100%;
+  }
+
+  .Herocontainer {
+    width: 90%;
+    padding: 1rem 0rem;
+  }
+
+  .Herocontainer img {
+    /* height: 200px; */
+  }
+
+  .Herocontainer h1 {
+    color: var(--text-secondary);
+    font-size: 40px;
+    line-height: 42px;
+    text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0);
+  }
+
+  .HeroBtnContainer {
+    display: flex;
+    flex-direction: column;
+
+    /* border: solid red 1px; */
+  }
+
+  .HeroBtn img {
+    height: 25px;
+    margin-right: 10px;
+  }
+
+  .HeroBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 320px;
+    background: var(--bg-main);
+    border: solid var(--text-main) 2px;
+    /* border-radius: 2rem; */
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    color: var(--text-main);
+    /* font-weight: bold; */
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+  }
+
+  .HeroBtn:hover {
+    background: var(--bg-secondary);
+    border: solid var(--bg-main) 2px;
+    color: var(--bg-main);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .Herocontainer {
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: column-reverse;
+    /* flex: 1 1; */
+    align-items: center;
+    justify-content: center;
+
+    width: 98%;
+    z-index: 10;
+
+    /* border: solid red 1px; */
+  }
+
+  .HLeft {
+    width: 95%;
+  }
+}

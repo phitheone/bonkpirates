@@ -1,0 +1,204 @@
+.A1Super {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../images/graybg.png);
+  /* background-image: linear-gradient(
+    to right,
+    var(--bg-secondary),
+    var(--text-main)
+  ); */
+  background-color: var(--bg-main);
+  background-position: center;
+  border-bottom: solid var(--text-main) 6px;
+}
+
+.A1Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding: 50px 0%;
+}
+
+.A1Top {
+  /* background-image: url("../../images/mapbg.png"); */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  width: 300px;
+  margin-top: 6rem;
+  justify-content: center;
+  text-align: justify;
+  /* flex: 1; */
+  color: black;
+  /* text-shadow: 0 0 3px rgb(255, 255, 255); */
+
+  /* border: 1px solid greenyellow; */
+}
+
+.A1Top img {
+  position: absolute;
+  z-index: 0;
+}
+
+.A1Top span {
+  color: var(--bg-secondary);
+}
+
+.A1Top p {
+  margin: 0px;
+  padding: 0px 0px;
+  font-size: 18px;
+  /* text-shadow: 0 0 5px rgb(255, 255, 255); */
+  /* font-family: "Exo", sans-serif; */
+
+  /* border: 1px solid red; */
+}
+
+.A1Top ul {
+  padding: 0px 5px;
+  margin-top: 0px;
+  list-style: none;
+}
+
+.A1Top h2 {
+  margin: 0px;
+  padding: 0px 0px;
+  text-align: left;
+}
+
+.A1Top h1 {
+  margin: 0px;
+  padding: 10px 0px;
+  /* text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0); */
+  color: var(--bg-main);
+  /* font-weight: bolder; */
+  font-size: 40px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.A1Bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* flex: 1; */
+}
+
+.A1Bottom img {
+  height: 150px;
+  cursor: pointer;
+  animation: infinite linear 1s;
+  animation-name: jumpy;
+}
+
+@keyframes jumpy {
+  0% {
+    rotate: 0deg;
+    transform: translateY(0px);
+  }
+  12.5% {
+    transform: translateY(-2px);
+  }
+  25% {
+    rotate: 3deg;
+    transform: translateY(0px);
+  }
+  37.5% {
+    transform: translateY(-2px);
+  }
+  50% {
+    rotate: 0deg;
+    transform: translateY(0px);
+  }
+  62.5% {
+    transform: translateY(-2px);
+  }
+  75% {
+    rotate: -3deg;
+    transform: translateY(0px);
+  }
+  87.5% {
+    transform: translateY(-2px);
+  }
+}
+
+.ACard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.ACard h2 {
+  color: white;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.ACard h2:hover {
+  text-shadow: 0 0 7px rgb(255, 255, 255), 0 0 15px rgb(255, 255, 255);
+}
+
+/*============Content=============*/
+
+.AContent {
+  z-index: 10;
+  color: var(--bg-main);
+  width: 300px;
+  /* text-align: left; */
+
+  /* border: 1px solid blue; */
+}
+
+/*============Media Queries=============*/
+
+@media screen and (max-width: 1000px) {
+  .A1Bottom img {
+    height: 100px;
+    cursor: pointer;
+    animation: infinite linear 1s;
+    animation-name: jumpy;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .A1Bottom img {
+    height: 80px;
+    cursor: pointer;
+    animation: infinite linear 1s;
+    animation-name: jumpy;
+  }
+
+  .ACard {
+    width: 100px;
+  }
+
+  .ACard h2 {
+    color: white;
+    font-weight: 100;
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 424px) {
+  .AContent {
+    width: 200px;
+  }
+
+  .A1Top img {
+    width: 290px;
+  }
+
+  .A1Top p {
+    font-size: 15px;
+  }
+}

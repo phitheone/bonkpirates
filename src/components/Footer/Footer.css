@@ -1,0 +1,52 @@
+.FooterSuper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bg-main);
+  background-image: url(../../images/footerbg.png);
+  background-size: cover;
+}
+
+.FooterContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0px;
+}
+
+.FooterSocials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
+  padding: 0px 0px;
+}
+
+.FooterSocials a {
+  cursor: pointer;
+}
+
+.FooterCR {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.FooterLogo img {
+  width: 300px;
+}
+
+/*==============Media Queries===============*/
+
+@media screen and (max-width: 700px) {
+  .FooterCR {
+    font-size: 11px;
+  }
+
+  .FooterLogo img {
+    width: 150px;
+  }
+}
