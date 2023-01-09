@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.55a6e9dd.css",
+    "main.js": "/static/js/main.b0962423.js",
+    "static/media/dogeP.png": "/static/media/dogeP.f481982049ec14cef152.png",
+    "static/media/Jolly_Roger.png": "/static/media/Jolly_Roger.4b381326519cab10e9f9.png",
+    "static/media/seabg.png": "/static/media/seabg.5723c7048b972f74fadf.png",
+    "static/media/sworddoge.png": "/static/media/sworddoge.56bafda9019861ad3f92.png",
+    "static/media/map.png": "/static/media/map.e547a8b75feea4a7c8d4.png",
+    "static/media/graybg.png": "/static/media/graybg.c264770a7758c49f3f52.png",
+    "static/media/treas1.png": "/static/media/treas1.c4f6826f427101ee94bc.png",
+    "static/media/footerbg.png": "/static/media/footerbg.ec50692a8b1312a66788.png",
+    "static/media/logowhite.png": "/static/media/logowhite.44ee975d2f75fddfb6cf.png",
+    "static/media/logoblack.png": "/static/media/logoblack.7ac53777f7da445a8de5.png",
+    "static/media/mapbg.png": "/static/media/mapbg.5ae1134d23ca1bab953a.png",
+    "index.html": "/index.html",
+    "static/media/twitter.svg": "/static/media/twitter.88145f5a5efc189af7c91e0ba0dede8e.svg",
+    "main.55a6e9dd.css.map": "/static/css/main.55a6e9dd.css.map",
+    "main.b0962423.js.map": "/static/js/main.b0962423.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.55a6e9dd.css",
+    "static/js/main.b0962423.js"
+  ]
+}
