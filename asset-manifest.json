@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.55a6e9dd.css",
-    "main.js": "/static/js/main.b0962423.js",
+    "main.css": "/static/css/main.9f13fc4b.css",
+    "main.js": "/static/js/main.cdef29a0.js",
     "static/media/dogeP.png": "/static/media/dogeP.f481982049ec14cef152.png",
     "static/media/Jolly_Roger.png": "/static/media/Jolly_Roger.4b381326519cab10e9f9.png",
     "static/media/seabg.png": "/static/media/seabg.5723c7048b972f74fadf.png",
@@ -10,16 +10,17 @@
     "static/media/graybg.png": "/static/media/graybg.c264770a7758c49f3f52.png",
     "static/media/treas1.png": "/static/media/treas1.c4f6826f427101ee94bc.png",
     "static/media/footerbg.png": "/static/media/footerbg.ec50692a8b1312a66788.png",
-    "static/media/logowhite.png": "/static/media/logowhite.44ee975d2f75fddfb6cf.png",
-    "static/media/logoblack.png": "/static/media/logoblack.7ac53777f7da445a8de5.png",
+    "static/media/logowhite.png": "/static/media/logowhite.aa18af3ad5b9c63cbaa7.png",
+    "static/media/logoblack.png": "/static/media/logoblack.1e8565c2eb636435ba5c.png",
     "static/media/mapbg.png": "/static/media/mapbg.5ae1134d23ca1bab953a.png",
     "index.html": "/index.html",
+    "static/media/discord.svg": "/static/media/discord.676092c0566392a62084ddab8ff36110.svg",
     "static/media/twitter.svg": "/static/media/twitter.88145f5a5efc189af7c91e0ba0dede8e.svg",
-    "main.55a6e9dd.css.map": "/static/css/main.55a6e9dd.css.map",
-    "main.b0962423.js.map": "/static/js/main.b0962423.js.map"
+    "main.9f13fc4b.css.map": "/static/css/main.9f13fc4b.css.map",
+    "main.cdef29a0.js.map": "/static/js/main.cdef29a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.55a6e9dd.css",
-    "static/js/main.b0962423.js"
+    "static/css/main.9f13fc4b.css",
+    "static/js/main.cdef29a0.js"
   ]
 }
